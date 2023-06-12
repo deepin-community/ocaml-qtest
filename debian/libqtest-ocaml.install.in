@@ -1,0 +1,6 @@
+@OCamlStdlibDir@/qtest/META
+@OCamlStdlibDir@/qtest/opam
+@OCamlStdlibDir@/qtest/lib/*.cma
+DYN: @OCamlStdlibDir@/qtest/lib/*.cmxs
+
+usr/doc/qtest/README.adoc /usr/share/doc/qtest/

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -e
+
+if [ -x '/usr/bin/ocamlopt' ]
+then
+
+    cd "$(dirname "$0")/../../tests"
+
+    [ "$(./testfoo.sh |& grep -E 'Failure.*>>foo.ml:247|Failure.*>>foo.ml:164' -c)" = 2 ]
+
+    echo ok
+
+else
+
+    echo skip testfoo, which requires ocamlopt
+
+fi

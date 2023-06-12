@@ -1,4 +1,13 @@
 #!/usr/bin/make -f
 
+DESTDIR=$(CURDIR)/debian/tmp
+include /usr/share/ocaml/ocamlvars.mk
+
 %:
-	dh $@
+	dh $@ --with ocaml
+
+override_dh_auto_build:
+	dune build -p qtest --verbose
+
+override_dh_auto_install:
+	dune install --destdir=$(DESTDIR) --prefix=/usr --libdir=..$(OCAML_STDLIB_DIR) --verbose

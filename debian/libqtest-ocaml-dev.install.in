@@ -1,0 +1,7 @@
+@OCamlStdlibDir@/qtest/dune-package
+@OCamlStdlibDir@/qtest/lib/*.cmi
+@OCamlStdlibDir@/qtest/lib/*.cmt
+@OCamlStdlibDir@/qtest/lib/*.ml
+OPT: @OCamlStdlibDir@/qtest/lib/*.a
+OPT: @OCamlStdlibDir@/qtest/lib/*.cmxa
+OPT: @OCamlStdlibDir@/qtest/lib/*.cmx

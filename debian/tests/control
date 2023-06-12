@@ -1,0 +1,3 @@
+Tests: testfoo, testcppo, testdirectives
+Depends: ocaml-nox, ocamlbuild, ocaml-findlib, libounit-ocaml-dev, libqcheck-ocaml-dev, ocaml-qtest, cppo
+Restrictions: allow-stderr
