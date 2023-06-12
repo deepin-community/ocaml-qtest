@@ -1,5 +1,62 @@
-template-repository (1.0-1) unstable; urgency=medium
+ocaml-qtest (2.11.2-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * New upstream release
+  * Bump Standards-Version to 4.6.0
+  * Update debian/watch
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 30 Nov 2021 08:48:42 +0100
+
+ocaml-qtest (2.11.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+
+ -- Stéphane Glondu <glondu@debian.org>  Mon, 21 Sep 2020 18:31:11 +0200
+
+ocaml-qtest (2.11-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Bump debhelper compat level to 13
+
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 18 Aug 2020 09:00:14 +0200
+
+ocaml-qtest (2.10.1-2) unstable; urgency=medium
+
+  * Fix testdirectives autopkgtest (Closes: #952505)
+    + Add ocaml-qtest/debian/patches/testdirectives.patch, which is sent
+      to upstream https://github.com/vincent-hugot/qtest/pull/55
+
+ -- Andy Li <andy@onthewings.net>  Fri, 06 Mar 2020 08:41:44 +0800
+
+ocaml-qtest (2.10.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release (Closes: #952254)
+  * Bump debhelper compat level to 12
+  * Bump Standards-Version to 4.5.0
+  * Add Rules-Requires-Root: no
+
+ -- Stéphane Glondu <glondu@debian.org>  Mon, 24 Feb 2020 07:43:55 +0100
+
+ocaml-qtest (2.9-3) unstable; urgency=medium
+
+  * Update install file for the latest version of dune. (Closes: #935618)
+  * Bump Standards-Version to 4.4.0 (no changes).
+  * Mark libqtest-ocaml-doc Multi-Arch: foreign.
+
+ -- Andy Li <andy@onthewings.net>  Sun, 25 Aug 2019 16:19:13 +0800
+
+ocaml-qtest (2.9-2) unstable; urgency=medium
+
+  * Update install files for a change in dune. (Closes: #917737)
+  * Bump Standards-Version to 4.3.0 (no changes).
+
+ -- Andy Li <andy@onthewings.net>  Sun, 30 Dec 2018 22:04:26 +0800
+
+ocaml-qtest (2.9-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #908003)
+
+ -- Andy Li <andy@onthewings.net>  Wed, 05 Sep 2018 16:37:50 +0800

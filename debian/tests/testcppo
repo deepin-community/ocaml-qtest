@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+if [ -x '/usr/bin/ocamlopt' ]
+then
+
+    cd "$(dirname "$0")/../../tests"
+
+    ./testcppo.sh
+
+    echo ok
+
+else
+
+    echo skip testcppo, which requires ocamlopt
+
+fi
